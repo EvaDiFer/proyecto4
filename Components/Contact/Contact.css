@@ -1,0 +1,69 @@
+.mi-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  gap: 1rem;
+}
+
+.experience {
+  margin-top: 0.5rem;
+  text-align: center;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5rem;
+  height: 80svh;
+}
+
+@media (max-width: 768px) {
+  #form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.field {
+  margin-bottom: 20px;
+}
+
+.field label {
+  display: block;
+  font-size: 15px;
+  color: #6d6060;
+}
+
+.field input {
+  display: block;
+  min-width: 250px;
+  line-height: 1.5rem;
+  font-size: 14px;
+  border-radius: 20px;
+}
+
+input[type='submit'] {
+  display: block;
+  padding: 6px 30px;
+  font-size: 14px;
+  background-color: var(--details-color);
+  color: var(--text-color);
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.messageInput {
+  height: 8rem;
+}
+
+.more-info {
+  margin-top: 1rem;
+  margin-left: 1rem;
+  text-align: justify;
+  width: 45%;
+}
