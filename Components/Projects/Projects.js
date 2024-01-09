@@ -6,6 +6,7 @@ const projects = [
     title: 'Landing page',
     tech: 'HTML5-CSS3',
     link: 'https://proyecto-1-rc.vercel.app/',
+    git: 'https://github.com/EvaDiFer/proyecto-1-rc',
   },
 
   {
@@ -13,6 +14,7 @@ const projects = [
     title: 'Coffe-Shop-Filters',
     tech: 'HTML5 - CSS3 - JavaScript',
     link: 'https://segundo-proyecto.vercel.app/',
+    git: 'https://github.com/EvaDiFer/SegundoProyecto',
   },
 
   {
@@ -20,13 +22,15 @@ const projects = [
     title: 'Color-Flipper',
     tech: 'HTML5 - CSS3 - JavaScript',
     link: 'https://color-flipper-jade.vercel.app/',
+    git: 'https://github.com/EvaDiFer/portfolio',
   },
 
   {
     image: '/proyectos.jpg',
-    title: 'Landding page',
+    title: 'Landing page',
     tech: 'HTML5 - CSS3 ',
     link: 'https://teal-marshmallow-600270.netlify.app/',
+    git: 'https://github.com/EvaDiFer/LandingPage',
   },
 
   {
@@ -34,6 +38,15 @@ const projects = [
     title: 'Art-Gallery',
     tech: 'HTML5 - CSS3 - JavaScript',
     link: 'https://artgalleryevadiaz.netlify.app/',
+    git: 'https://github.com/EvaDiFer/ArtGallery',
+  },
+
+  {
+    image: '/proyectos.jpg',
+    title: 'EpicSnap',
+    tech: 'HTML5 - CSS3 - JavaScript',
+    link: 'https://steady-dragon-5e9002.netlify.app/',
+    git: 'https://github.com/EvaDiFer/EpicSnap',
   },
 ];
 
@@ -69,11 +82,29 @@ export const renderProjects = () => {
 
     const span = document.createElement('span');
     span.className = 'hover-underline-animation';
-    span.textContent = 'VER PROYECTO';
+    span.textContent = 'Deployment 📎';
 
     link.appendChild(span);
 
     button.appendChild(link);
+
+    const githubLink = document.createElement('a');
+    githubLink.href = project.git;
+    githubLink.target = '_blank';
+
+    const codeText = document.createElement('span');
+    codeText.textContent = 'Code';
+    codeText.className = 'codigo';
+    githubLink.appendChild(codeText);
+
+    const githubIcon = document.createElement('img');
+    githubIcon.className = 'github-icon';
+    githubIcon.src = '/public/icons/github.png';
+    githubIcon.alt = 'GitHub Repository';
+    githubLink.appendChild(githubIcon);
+
+    button.appendChild(githubLink);
+
     projectDiv.appendChild(button);
 
     divProjects.appendChild(projectDiv);

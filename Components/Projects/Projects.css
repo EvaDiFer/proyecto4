@@ -7,8 +7,8 @@
   padding-bottom: 1rem;
 }
 .project {
-  width: 350px;
-  height: 350px;
+  width: 300px;
+  height: 330px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -16,9 +16,10 @@
 }
 
 .projects-images {
-  width: 80%;
-  height: 80%;
-  border-radius: 20%;
+  width: 100%;
+  height: 100%;
+  border-radius: 10%;
+  object-fit: cover;
 }
 .project h3 {
   margin-top: 10px;
@@ -36,8 +37,21 @@
   padding: 10px 20px;
   border-radius: 5px;
   cursor: pointer;
+  margin-top: 0.5rem;
 }
 
 span {
   color: #4f5353;
+  display: block;
+  margin-top: 0.5rem;
+}
+.codigo {
+  display: inline-block;
+  margin-right: 0.7rem;
+}
+.github-icon {
+  width: 20px;
+  height: 20px;
+  margin-top: 0.2rem;
+  cursor: pointer;
 }

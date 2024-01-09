@@ -71,7 +71,7 @@ header > nav > ul {
 .to-home:hover,
 .to-projects:hover,
 .to-contact:hover {
-  text-decoration: underline #f2f2f2;
+  text-decoration: underline #060000b4;
   text-decoration-thickness: 2px;
 }
 
